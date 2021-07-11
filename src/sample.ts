@@ -1,4 +1,4 @@
-function add(a: number, b: number) {
+export function add(a: number, b: number) {
     return a + b;
   }
   const sum: number = add(1, 2);
@@ -22,13 +22,13 @@ let nan: number = NaN;
 console.log(integer);
 
 enum Week {
-  Sun,
-  Mon,
-  Tue,
-  Wed,
-  Thu,
-  Fri,
-  Sat
+  Sun = 0,
+  Mon = 22,
+  Tue = 23,
+  Wed = 24,
+  Thu = 25,
+  Fri = 26,
+  Sat = 27,
 }
-
-console.log(Week.Mon);
+console.log(Week.Mon);//22
+console.log(Week.Tue);
