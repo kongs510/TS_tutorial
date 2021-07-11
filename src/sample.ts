@@ -20,3 +20,15 @@ let infinity: number = Infinity;
 let nan: number = NaN;
 
 console.log(integer);
+
+enum Week {
+  Sun,
+  Mon,
+  Tue,
+  Wed,
+  Thu,
+  Fri,
+  Sat
+}
+
+console.log(Week.Mon);
