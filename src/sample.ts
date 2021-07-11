@@ -32,3 +32,33 @@ enum Week {
 }
 console.log(Week.Mon);//22
 console.log(Week.Tue);
+
+
+interface IUser {
+  name: string,
+  age: number,
+  isValid: boolean
+}
+
+type Result = {
+  success: true,
+  value: unknown
+} | {
+  success: false,
+  error: Error
+}
+
+export default function getItems(user: IUser): Result {
+  // Some logic...
+  if (id.isValid) {
+    return {
+      success: true,
+      value: ['Apple', 'Banana']
+    };
+  } else {
+    return {
+      success: false,
+      error: new Error('Invalid user.')
+    }
+  }
+}
