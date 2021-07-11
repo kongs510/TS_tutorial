@@ -2,8 +2,22 @@
   "compilerOptions": {
     "strict": true,
     "target": "ES6",
-    "lib": ["ES2015", "DOM"],
-    "module": "CommonJS"
+    "lib": [
+      "ES2015",
+      "DOM"
+    ],
+    "module": "esnext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
   "include": [
     "src/**/*.ts"
